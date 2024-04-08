@@ -58,4 +58,18 @@ toc: true
 
     ![alt text](../images/image-2024040809.png)
 
+6. 环境清理
 
+    6.1 停止docker-compose
+
+    ``` shell
+    cd output && docker-compose down
+    ```
+
+    6.2 删除output目录
+
+    ``` shell
+    rm -rf output
+    ```
+
+    
