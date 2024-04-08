@@ -31,7 +31,6 @@ toc: true
 
     normal配置为1个gtm, 1个gtm slave, 2个cn master, 2个cn slave, 3个dn master, 3个dn slave
 
-
 3. 生成配置
 
     默认生成的配置都会在output目录下, 同时这一步会打印出初始化的shell语句, 如下
@@ -72,4 +71,3 @@ toc: true
     rm -rf output
     ```
 
-    

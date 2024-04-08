@@ -5,7 +5,7 @@ keywords: null
 author: 好方
 language: zh-CN
 timezone: Asia/Shanghai
-url: http://example.com
+url: https://kengdie.xyz
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
 pretty_urls:
