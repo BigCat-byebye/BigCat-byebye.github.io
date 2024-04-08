@@ -233,11 +233,11 @@ widgets:
         # Author title
         # author_title: 苦逼运维一枚
         # Author's current location
-        location: 天朝/广州
+        # location: 天朝/广州
         # URL or path to the avatar image
         avatar: images/pic0001.jpg
         # Whether show the rounded avatar image
-        avatar_rounded: false
+        avatar_rounded: true
         # Email address for the Gravatar
         gravatar: 
         # URL or path for the follow button
