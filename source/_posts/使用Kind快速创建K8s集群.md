@@ -6,6 +6,8 @@ categories: ['奇淫巧计']
 ---
 使用kind快速创建k8s的测试环境, 方便平时测试
 
+<!--more-->
+
 ## 参考
 
 kind官网: https://kind.sigs.k8s.io/
