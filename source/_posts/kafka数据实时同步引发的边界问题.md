@@ -1,5 +1,5 @@
 ---
-title: 业务思考-场景思考1
+title: kafka数据实时同步引发的边界问题
 date: 2024-04-17 13:07:13
 tags: ['kafka', 'postgres']
 categories: ['业务思考']
