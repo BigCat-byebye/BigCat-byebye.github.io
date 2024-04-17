@@ -3,6 +3,8 @@ title: 脚本-Zerotier-one自动加入
 date: 2024-04-08 01:11:23
 tags: ['bash', '脚本', 'zerotier-one', '内网穿透']
 toc: true
+categories: ['脚本工具']
+
 ---
 
 本脚本用于一键式将客户端加入到zerotier-one的私有网络中

@@ -3,6 +3,7 @@ title: Docker-compose快速创建pgxc集群
 date: 2024-04-08 13:01:42
 tags: ['postgres', 'pgxc']
 toc: true
+categories: ['脚本工具']
 ---
 
 基于docker-compose快速创建不同拓扑结构的pgxc集群, 方便日常测试

@@ -3,6 +3,7 @@ title: 使用Kind快速创建K8s集群
 date: 2024-04-08 23:14:25
 tags: ['kind', 'k8s', 'docker']
 categories: ['奇淫巧计']
+toc: true
 ---
 使用kind快速创建k8s的测试环境, 方便平时测试
 
