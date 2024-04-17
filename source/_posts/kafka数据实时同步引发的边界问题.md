@@ -5,6 +5,9 @@ tags: ['kafka', 'postgres']
 categories: ['业务思考']
 toc: true
 ---
+数据库从**kafka集群**中实时增量同步数据, 由于kafka的默认保留7天日志的问题, 引发的边界情况下, 可能丢数据的思考
+
+<!--more-->
 
 ## 场景描述
 
