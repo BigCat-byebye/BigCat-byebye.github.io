@@ -55,13 +55,13 @@ jobs:
         if: success()
         with:
           url: 'https://ntfy.sh/'
-          topic: '{{ secrets.NTFY_TOPIC }}'
+          topic: '${{ secrets.NTFY_TOPIC }}'
           details: 'Workflow has been successfully completed!'
       - name: ntfy-failed-notifications
         uses: niniyas/ntfy-action@master
         if: failure()
         with:
           url: 'https://ntfy.sh/'
-          topic: '{{ secrets.NTFY_TOPIC }}'
+          topic: '${{ secrets.NTFY_TOPIC }}'
           priority: 5
-          details: 'Workflow has failed! {{ secrets.GITHUB_REPOSITORY }}'
+          details: 'Workflow has failed! ${{ secrets.GITHUB_REPOSITORY }}'
