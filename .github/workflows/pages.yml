@@ -46,3 +46,21 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+  ntfy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ntfy-success-notifications
+        uses: niniyas/ntfy-action@master
+        if: success()
+        with:
+          url: 'https://ntfy.sh'
+          topic: '${{ secrets.NTFY_TOPIC }}'
+          details: Workflow has been successfully completed!
+      - name: ntfy-failed-notifications
+        uses: niniyas/ntfy-action@master
+        if: failure()
+        with:
+          url: 'https://ntfy.sh'
+          topic: '${{ secrets.NTFY_TOPIC }}'
+          priority: 5
+          details: Workflow has failed! {{ secrets.GITHUB_REPOSITORY }}
