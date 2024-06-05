@@ -1,9 +1,13 @@
 ---
 title: HomeLab教程-Proxmox优化配置
-tags: ['proxmox']
+tags:
+  - proxmox
 toc: true
-categories: ['HomeLab']
+categories:
+  - HomeLab
+date: 2024-06-05 19:25:44
 ---
+
 安装了pve之后, 执行apt update的时候, 会提示订阅的问题, 导致无法update, 按照以下方法重新配置Apt源,Ceph源以及Pve中的订阅提示之后, 就不会有这些麻烦问题了!
 <!--more-->
 
