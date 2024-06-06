@@ -1,5 +1,5 @@
 ---
-title: HomeLab教程-Proxmox搭建
+title: HomeLab系列-Proxmox搭建
 date: 2024-05-27 16:39:33
 tags: ['proxmox', 'tailscale']
 toc: true
