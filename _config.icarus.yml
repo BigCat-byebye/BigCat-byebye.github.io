@@ -3,11 +3,11 @@ version: 5.1.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: images/pic0001.jpg
+logo: https://mys3.kengdie.xyz/blog/pic0001.jpg
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: images/pic0001.jpg
+    favicon: https://mys3.kengdie.xyz/blog/pic0001.jpg
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -238,7 +238,7 @@ widgets:
         # Author's current location
         # location: 天朝/广州
         # URL or path to the avatar image
-        avatar: images/pic0001.jpg
+        avatar: https://mys3.kengdie.xyz/blog/pic0001.jpg
         # Whether show the rounded avatar image
         avatar_rounded: true
         # Email address for the Gravatar
