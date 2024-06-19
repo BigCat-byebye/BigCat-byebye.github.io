@@ -1,5 +1,5 @@
 ---
-title: HomeLab系列-Proxmox优化配置
+title: HomeLab系列-2-Proxmox优化配置
 tags:
   - proxmox
 toc: true
