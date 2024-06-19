@@ -6,7 +6,9 @@ categories: ['HomeLab']
 date: 2024-06-19 22:51:00
 ---
 
- 使用tailscale可以搭建内网环境, 可以实现pve上的虚拟机自动接入tailscale的内网, 且从远程的笔记本直接访问, 无需其他设置
+使用tailscale可以搭建内网环境, 可以实现pve上的虚拟机自动接入tailscale的内网, 且从远程的笔记本直接访问, 无需其他设置
+
+<!--more-->
 
 ## 参考
 

@@ -7,7 +7,7 @@ toc: true
 categories:
   - HomeLab
   - Cloudflare
-date: 2024-06-17 12:36:50
+date: 2024-06-19 23:00:50
 ---
 
 前几天写了个使用registry的pullthrough功能,解决了无法拉取dockerhub的问题, 但是最近又碰到了其他问题, 那就是在拉取镜像的时候, yaml文件中的镜像不一定都是dockerhub中的, 而且, 用registry还有单独解决https的问题, 如果只解决dockerhub还好, 但是镜像仓库多了就很麻烦, 因此想到了cloudflare的worker, 果然能完美解决这个问题!!!
