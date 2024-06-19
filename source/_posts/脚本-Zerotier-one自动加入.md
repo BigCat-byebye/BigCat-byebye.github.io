@@ -77,10 +77,10 @@ fi
 ### 修改配置
 
 1. apitoken: 来自官网
-![apitoken](../images/image-1.png)
+![apitoken](https://mys3.kengdie.xyz/blog/image-1.png)
 
 2. networkid: 来自官网
-![networkid](../images/image.png)
+![networkid](https://mys3.kengdie.xyz/blog/image.png)
 
 3. clientname: 预加入的客户端名称
 

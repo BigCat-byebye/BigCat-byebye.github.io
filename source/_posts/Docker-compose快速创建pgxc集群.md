@@ -36,7 +36,7 @@ categories: ['脚本工具']
 
     默认生成的配置都会在output目录下, 同时这一步会打印出初始化的shell语句, 如下
 
-    ![alt text](../images/image-2024040807.png)
+    ![alt text](https://mys3.kengdie.xyz/blog/image-2024040807.png)
 
     ``` shell
      python3 run.py
@@ -52,11 +52,11 @@ categories: ['脚本工具']
 
     粘贴步骤3的输出语句即可初始化集群, 如下
     
-    ![alt text](../images/image-2024040808.png)
+    ![alt text](https://mys3.kengdie.xyz/blog/image-2024040808.png)
     
     初始化集群的结果, 可验证如下
 
-    ![alt text](../images/image-2024040809.png)
+    ![alt text](https://mys3.kengdie.xyz/blog/image-2024040809.png)
 
 6. 环境清理
 

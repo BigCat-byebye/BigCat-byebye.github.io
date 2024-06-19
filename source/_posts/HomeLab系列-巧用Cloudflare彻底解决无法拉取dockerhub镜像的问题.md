@@ -19,7 +19,7 @@ date: 2024-06-17 12:36:50
 ## 使用方法-无敌简单版
 
 直接进入参考的github网页, 在仓库中直接点击这个按钮即可
-![image-20240617124138371](./../images/image-20240617124138371.png)
+![image-20240617124138371](https://mys3.kengdie.xyz/blog/image-20240617124138371.png)
 
 然后会跳出来github的认证, 再填写上cloudflare的token即可
 
@@ -32,13 +32,13 @@ date: 2024-06-17 12:36:50
 
 说明: 域名服务商,就是你在哪里申请的域名, 哪里就是你的域名服务商, 一般你申请了域名之后, 会有1个管理后台的, 管理后台中, 就有域名的**dns服务器**, 你改成**提示**中的cloudflare的就好, 一般需要数小时才能识别到, 等cloudflare识别了之后, 这里的站点下面, 就会出现活跃2个字, 就可以进行下一步了
 
-![image-20240617125118693](./../images/image-20240617125118693.png)
+![image-20240617125118693](https://mys3.kengdie.xyz/blog/image-20240617125118693.png)
 
 ### 创建worker
 
 登录到cloudflare的界面, 然后点击Workers页面, 如下, 不熟悉英文的人, 可以选择右上角, 选择中文就是了
 
-![image-20240617124527386](./../images/image-20240617124527386.png)
+![image-20240617124527386](https://mys3.kengdie.xyz/blog/image-20240617124527386.png)
 
 创建1个worker, 名字的话, 就写cloudflare-docker-proxy就可以了, 因为这个名字被worker中的代码里面引用了, 因此就直接写这个名字吧
 
@@ -235,7 +235,7 @@ docker-cloudsmith.yyy.xyz
 
 创建后如下
 
-![image-20240617125632811](./../images/image-20240617125632811.png)
+![image-20240617125632811](https://mys3.kengdie.xyz/blog/image-20240617125632811.png)
 
 创建后, 就会出现6个自定义域
 
@@ -251,7 +251,7 @@ docker login docker.yyy.com -u 23523523 -p 232523525
 
 可以看到, 能够登录成功, 也就是说明正常代理到了dockerhub了
 
-![image-20240617130259130](./../images/image-20240617130259130.png)
+![image-20240617130259130](https://mys3.kengdie.xyz/blog/image-20240617130259130.png)
 
 ### 拉取dockerhub镜像验证
 
@@ -263,7 +263,7 @@ docker pull docker.yyy.com/library/busybox:latest
 
 可以看到能够正常拉取
 
-![image-20240617130603461](./../images/image-20240617130603461.png)
+![image-20240617130603461](https://mys3.kengdie.xyz/blog/image-20240617130603461.png)
 
 ### 拉取quay镜像验证
 
@@ -275,6 +275,6 @@ docker pull quay.yyy.com/brancz/kube-rbac-proxy:v0.14.2
 
 可以看到能正常拉取
 
-![image-20240617130905600](./../images/image-20240617130905600.png)
+![image-20240617130905600](https://mys3.kengdie.xyz/blog/image-20240617130905600.png)
 
 可以看到均通过cloudflare正常代理了

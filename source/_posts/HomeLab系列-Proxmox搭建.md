@@ -24,7 +24,7 @@ categories: ['HomeLab']
 
 直接使用Rufus刻录proxmox的iso镜像即可,注意**不要使用ventoy, 会报错!!!**
 
-![image-20240527135625807](./../images/image-20240527135625807.png)
+![image-20240527135625807](https://mys3.kengdie.xyz/blog/image-20240527135625807.png)
 
 **安装过程中, 很顺滑, 直接按照提示, 每次都下一步即可, 基本不会出错, 小白也能成功, 这里就不细讲了**
 
@@ -36,7 +36,7 @@ categories: ['HomeLab']
 
 注意**我这里的第一块网卡是enp3s0**, 在这里, 我们新建1个网卡vmbr1作为给后续虚拟机使用的网段,  黄色框是默认的proxmox网络配置, 其中红色框是新增的网卡vmbr1
 
-![image-20240527145106426](./../images/image-20240527145106426.png)
+![image-20240527145106426](https://mys3.kengdie.xyz/blog/image-20240527145106426.png)
 
 **说明**: 这样做的原因是为了方便后面带着homelab迁移的时候, 方便点, 可以直接使用, **比如现在的路由器网段是192.168.10.0/24, 如果采用默认的网络模式, 那么创建的虚拟机, 都会自动获取到192.168.10.0/24段, 如果搬家之后, 路由器网段变成了192.168.11.0/24, 那虚拟机获取的网络就有可能从原来的192.168.10.0/24变成192.168.11.0/24段, 虚拟机上的服务可能会收到影响, 因此新建1个vmbr1的网卡, 然后创建虚拟机的时候, 使用这张网卡, 这样子, 无论环境怎么变化, 虚拟机的ip都不会受到影响**
 
@@ -54,13 +54,13 @@ apt install -y isc-dhcp-server
 
 修改配置文件/etc/default/isc-dhcp-server如下
 
-![image-20240527143951580](./../images/image-20240527143951580.png)
+![image-20240527143951580](https://mys3.kengdie.xyz/blog/image-20240527143951580.png)
 
 ### 创建地址池
 
 注意, 下面的option routes表示该地址池的网关地址(**一般是网段内的第一个**), 注意填写为创建的vmbr1的地址, option broadcase-address表示地址池的广播地址(**一般是网段内的最后一个**)
 
-![image-20240527150054167](./../images/image-20240527150054167.png)
+![image-20240527150054167](https://mys3.kengdie.xyz/blog/image-20240527150054167.png)
 
 ## 安装Tailscale
 
@@ -90,13 +90,13 @@ sudo sysctl -p /etc/sysctl.d/99-tailscale.conf
 
 登录到tailscale的web页面, 修改如下图
 
-![image-20240527162703161](./../images/image-20240527162703161.png)
+![image-20240527162703161](https://mys3.kengdie.xyz/blog/image-20240527162703161.png)
 
 1. 关闭key过期
 
 2. 编辑route设置
 
-   ![image-20240527162751331](./../images/image-20240527162751331.png)
+   ![image-20240527162751331](https://mys3.kengdie.xyz/blog/image-20240527162751331.png)
 
    上面**开启子网**之后, 点击Edit route settings 就会出现这个subnet route选项, 勾选即可启用该子网, 那么这个子网内的设备, 就同可以通过tailscale访问了, 而不需要安装tailescale客户端
 
@@ -104,11 +104,11 @@ sudo sysctl -p /etc/sysctl.d/99-tailscale.conf
 
 **备注**: 网卡记得一定要选择刚才新建vmbr1网卡
 
-![image-20240527160043780](./../images/image-20240527160043780.png)
+![image-20240527160043780](https://mys3.kengdie.xyz/blog/image-20240527160043780.png)
 
 可以看到虚拟机可以正常的获取到ip, **这里获取的ip是10.1段, 与上面配置的10.10不符合, 是因为后面重新规划了网段, 把原来规划的10.10段改成10.1段了**
 
-![image-20240527160235108](./../images/image-20240527160235108.png)
+![image-20240527160235108](https://mys3.kengdie.xyz/blog/image-20240527160235108.png)
 
 
 
@@ -116,6 +116,6 @@ sudo sysctl -p /etc/sysctl.d/99-tailscale.conf
 
 从我的笔记本访问pve上创建的虚拟机, 该虚拟机上没有安装tailscale, 但是pve上安装了tailsacele, 并且开启了子网, 验证如下
 
-![image-20240527163131353](./../images/image-20240527163131353.png)
+![image-20240527163131353](https://mys3.kengdie.xyz/blog/image-20240527163131353.png)
 
 可以看到能够正常的访问新建的虚拟机了

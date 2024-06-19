@@ -219,7 +219,7 @@ root@base:~/test#
 
 这里通过数据中心>存储可以看到pve是默认有2个存储的, 分别是local和local-lvm, 我这里用的是local, 可以看到local对应的目录是/var/lib/vz/目录, 默认的local是不能存储片段的, 因此双击一下, 就可以编辑, 然后选择一下片段即可
 
-![微信截图_20240610180743.png](../images/微信截图_20240610180743.png)
+![微信截图_20240610180743.png](https://mys3.kengdie.xyz/blog/微信截图_20240610180743.png)
 
 然后将上面创建的clout-init.txt放到local的片段下, 如下
 
@@ -236,13 +236,13 @@ root@base:~#
 
 在pve的操作界面上, 给虚拟机加上一个cloud-init设备即可
 
-![微信截图_20240611133430.png](../images/微信截图_20240611133430.png)
+![微信截图_20240611133430.png](https://mys3.kengdie.xyz/blog/微信截图_20240611133430.png)
 
 添加完后, 在虚拟机的cloud-init选项中将IP配置改成dncp, 这样就不用手动写network了
-![微信截图_20240610181014.png](../images/微信截图_20240610181014.png)
+![微信截图_20240610181014.png](https://mys3.kengdie.xyz/blog/微信截图_20240610181014.png)
 
 在虚拟机的选项配置中, 开启qume-guest-agent, 这是为了后面可以从pve使用qm guest命令操作虚拟机
-![微信截图_20240610181353.png](../images/微信截图_20240610181353.png)
+![微信截图_20240610181353.png](https://mys3.kengdie.xyz/blog/微信截图_20240610181353.png)
 
 ## 配置自定义cloud-init
 这里的local是pve中存储local的位置哈, 这里的local:snippets/cloud-init.txt其实就是指刚才复制到local的片段里面的clout-init.txt文件, local代表/var/lib/vz/目录, 使用qm set以及--cicustom配置虚拟机的自定义数据, 其中user是指配置user-data, **也可以单独配置network或者meta, 如果不配置的话, network和meta就会由pve自动产生**
@@ -266,7 +266,7 @@ cloud-init clean -c all
 
 上述配置结束后, 在pve界面将虚拟机关机, 然后转换为模板, **注意哈, 转换为模板, 需要虚拟机先关机**
 
-![image-20240611134149245](./../images/image-20240611134149245.png)
+![image-20240611134149245](https://mys3.kengdie.xyz/blog/image-20240611134149245.png)
 
 ## 验证
 
@@ -278,9 +278,9 @@ cloud-init clean -c all
 
 虚拟机开机后, 使用自己的密钥登录虚拟机, 执行clond-init status, 运行结果为done, 则说明cloud-init正常运行结束了, 如下
 
-![微信截图_20240610181511.png](../images/微信截图_20240610181511.png)
+![微信截图_20240610181511.png](https://mys3.kengdie.xyz/blog/微信截图_20240610181511.png)
 
 ### 验证ntfy的消息
 
-![微信截图_20240610181631.png](../images/微信截图_20240610181631.png)
+![微信截图_20240610181631.png](https://mys3.kengdie.xyz/blog/微信截图_20240610181631.png)
 可以看到正常的收到了发送消息

@@ -27,7 +27,7 @@ kind官网: https://kind.sigs.k8s.io/
 
 2. 登录后，私有仓库的认证文件路径就是~/.docker/config.json了
 
-    ![微信截图_20240408232039.png](../images/微信截图_20240408232039.png)
+    ![微信截图_20240408232039.png](https://mys3.kengdie.xyz/blog/微信截图_20240408232039.png)
 
 ### Kind集群配置文件
 

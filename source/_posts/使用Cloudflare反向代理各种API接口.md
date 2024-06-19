@@ -17,7 +17,7 @@ https://github.com/gaboolic/cloudflare-reverse-proxy
 1. 登录cloudflare官网, 新建1个website
 
 2. 创建1个应用程序
-![alt text](../images/image-2024040801.png)
+![alt text](https://mys3.kengdie.xyz/blog/image-2024040801.png)
 
 3. 创建1个worker, 并部署
 
@@ -147,27 +147,27 @@ function createLandingPage() {
 
     5.1 在cloudflare中新建1个网站
 
-    ![alt text](../images/image-2024040802.png)
+    ![alt text](https://mys3.kengdie.xyz/blog/image-2024040802.png)
 
     5.2 前往域名服务商, 将域名的dns服务器改成cloudflare的
 
-    ![alt text](../images/image-2024040803.png)
+    ![alt text](https://mys3.kengdie.xyz/blog/image-2024040803.png)
 
     5.3 给域名添加1个A记录
 
     切记: 一定要选择proxied, 其中Content随便写一个ip就好
 
-    ![alt text](../images/image-2024040804.png)
+    ![alt text](https://mys3.kengdie.xyz/blog/image-2024040804.png)
 
     5.4 添加1个worker route, 如下
 
     route填写刚才的A记录, worker选择前面创建的worker即可
 
-    ![alt text](../images/image-2024040805.png)
+    ![alt text](https://mys3.kengdie.xyz/blog/image-2024040805.png)
 
 
 6. 验证
 
 访问刚才设置的子域名加上/proxy/加上目的域名即可, 如: https://ceshiproxy.xxxx.bbs/proxy/https://www.baidu.com
 
-![alt text](../images/image-2024040806.png)
+![alt text](https://mys3.kengdie.xyz/blog/image-2024040806.png)

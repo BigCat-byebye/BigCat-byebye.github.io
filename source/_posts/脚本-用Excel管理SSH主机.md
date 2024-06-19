@@ -26,7 +26,7 @@ categories: ['脚本工具']
 - 字段顺序不可以更改, 必须为name, ip, port, user, password
 - password字段填写密码或者密钥文件名, 只写密钥文件名即可, 且必须放在和csv文件同一目录
 
-![link-to-ssh-csv](../images/link-to-ssh-csv.png)
+![link-to-ssh-csv](https://mys3.kengdie.xyz/blog/link-to-ssh-csv.png)
 
 ## Bash脚本
 
@@ -152,4 +152,4 @@ bash link-to-ssh.sh
 
 如下
 
-![link-to-ssh-sh-running](../images/link-to-ssh-sh-running.png)
+![link-to-ssh-sh-running](https://mys3.kengdie.xyz/blog/link-to-ssh-sh-running.png)
