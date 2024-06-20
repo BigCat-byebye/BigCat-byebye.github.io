@@ -5,7 +5,7 @@ keywords: null
 author: 好方
 language: zh-CN
 timezone: Asia/Shanghai
-url: https://www.kengdie.xyz
+url: https://blog.kengdie.xyz
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
 pretty_urls:
@@ -20,7 +20,7 @@ code_dir: downloads/code
 i18n_dir: ':lang'
 skip_render: null
 new_post_name: ':title.md'
-default_layout: draft
+default_layout: post
 titlecase: false
 external_link:
   enable: true
