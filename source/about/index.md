@@ -47,7 +47,7 @@ https://apiproxy.kengdie.xyz/
 
 ### 使用
 
-直接访问```https://apiproxy.kengdie.xyz/```加上```https://www.baidu.com``即可
+直接访问 ```https://apiproxy.kengdie.xyz/``` 加上 ```https://www.baidu.com``` 即可
 
 
 
